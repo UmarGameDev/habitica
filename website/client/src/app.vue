@@ -108,7 +108,6 @@
 <script>
 import axios from 'axios';
 
-import * as Analytics from '@/libs/analytics';
 import { mapState } from '@/libs/store';
 import snackbars from '@/components/snackbars/notifications';
 import { LOCALSTORAGE_AUTH_KEY } from '@/libs/auth';
@@ -149,10 +148,6 @@ export default {
       if (this.isUserLoaded) {
         this.hideLoadingScreen();
       }
-    });
-    this.$nextTick(() => {
-      // Load external scripts after the app has been rendered
-      Analytics.load();
     });
 
     axios.interceptors.response.use(response => { // Set up Response interceptors
@@ -212,13 +207,25 @@ export default {
         const isBanned = this.checkForBannedUser(error);
         if (isBanned === true) return null; // eslint-disable-line consistent-return
 
-        // Don't show errors from getting user details. These users have delete their account,
+        // Don't show errors from getting user details. These users have deleted their account,
         // but their chat message still exists.
         const configExists = Boolean(error.response) && Boolean(error.response.config);
-        if (configExists && error.response.config.method === 'get' && error.response.config.url.indexOf('/api/v4/members/') !== -1) {
-          // @TODO: We resolve the promise because we need our caching to cache this user as tried
-          // Chat paging should help this, but maybe we can also find another solution..
-          return Promise.resolve(error);
+        if (configExists) {
+          if (error.response.config.method === 'get' && error.response.config.url.indexOf('/api/v4/members/') !== -1) {
+            // @TODO: We resolve the promise because we need our caching to cache this user as tried
+            // Chat paging should help this, but maybe we can also find another solution..
+            return Promise.resolve(error);
+          }
+          // Also, a 404 occurs during routine attempt to log in with social,
+          // when we check for account already existing.
+          if (error.response.config.method === 'post' && (error.response.config.url.indexOf('/api/v4/user/auth/social') !== -1
+            || error.response.config.url.indexOf('/api/v4/user/auth/apple') !== -1)) {
+            const socialEmail = error.response.data.message.split(': ')[1];
+            if (socialEmail) {
+              window.sessionStorage.setItem('social-email', socialEmail);
+            }
+            return Promise.resolve(error);
+          }
         }
 
         const errorData = error.response.data;

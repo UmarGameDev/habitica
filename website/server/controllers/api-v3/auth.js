@@ -1,5 +1,6 @@
 import validator from 'validator';
 import moment from 'moment';
+import pick from 'lodash/pick';
 import sortBy from 'lodash/sortBy';
 import nconf from 'nconf';
 import {
@@ -127,9 +128,9 @@ api.loginLocal = {
     await user.save();
 
     res.analytics.track('login', {
-      category: 'behaviour',
+      user: pick(user, ['preferences', 'registeredThrough']),
+      category: 'behavior',
       type: 'local',
-      gaLabel: 'local',
       uuid: user._id,
       headers: req.headers,
     });
@@ -158,6 +159,9 @@ api.redirectApple = {
   async handler (req, res) {
     if (req.body.id_token) {
       req.body.network = 'apple';
+      if (!req.body.allowRegister) {
+        req.body.allowRegister = false;
+      }
       return loginSocial(req, res);
     }
     let url = `/static/apple-redirect?code=${req.body.code}`;
@@ -181,6 +185,8 @@ api.loginApple = {
   url: '/user/auth/apple',
   async handler (req, res) {
     req.body.network = 'apple';
+    req.body.allowRegister = req.query.allowRegister === 'true';
+    req.body.username = req.query.username;
     return loginSocial(req, res);
   },
 };
