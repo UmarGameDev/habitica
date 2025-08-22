@@ -12,6 +12,7 @@ import {
   CollapsePlugin,
 } from 'bootstrap-vue';
 import Fragment from 'vue-fragment';
+import LoadScript from 'vue-plugin-load-script';
 import AppComponent from './app';
 import {
   setup as setupAnalytics,
@@ -48,9 +49,10 @@ Vue.use(TooltipPlugin);
 Vue.use(NavbarPlugin);
 Vue.use(CollapsePlugin);
 Vue.use(Fragment.Plugin);
+Vue.use(LoadScript);
 
 setUpLogging();
-setupAnalytics(); // just create queues for analytics, no scripts loaded at this time
+setupAnalytics();
 const store = getStore();
 
 if (import.meta.env.TIME_TRAVEL_ENABLED === 'true') {
