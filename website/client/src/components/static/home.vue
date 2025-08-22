@@ -360,6 +360,7 @@
 <style lang="scss" scoped>
 @import '@/assets/scss/colors.scss';
 @import '@/assets/scss/privacy.scss';
+@import '@/assets/scss/forms.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 

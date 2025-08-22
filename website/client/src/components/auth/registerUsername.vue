@@ -101,14 +101,22 @@
 <style lang="scss" scoped>
   @import '@/assets/scss/colors.scss';
   @import '@/assets/scss/privacy.scss';
+  @import '@/assets/scss/forms.scss';
+
+  p.purple-600 {
+    line-height: 1.714;
+  }
+
+  .custom-checkbox {
+    .custom-control-label::before {
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+  }
 
   .gradient-bg {
     background: linear-gradient(to bottom, $purple-200, $purple-300);
     height: 700px;
-  }
-
-  p.purple-600 {
-    line-height: 1.714;
   }
 
   .input-error {
