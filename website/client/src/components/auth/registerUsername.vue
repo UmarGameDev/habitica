@@ -112,6 +112,10 @@
       border-radius: 2px;
       margin-top: 2px;
     }
+
+    .custom-control-input:checked~.custom-control-label::after {
+      margin-top: 2px;
+    }
   }
 
   .gradient-bg {
