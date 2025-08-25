@@ -369,6 +369,7 @@
 
 <style lang="scss" scoped>
   @import '@/assets/scss/colors.scss';
+  @import '@/assets/scss/forms.scss';
   @import '@/assets/scss/privacy.scss';
 
   @media only screen and (max-width: 768px) {
