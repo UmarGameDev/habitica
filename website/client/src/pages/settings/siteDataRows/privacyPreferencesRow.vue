@@ -86,7 +86,7 @@
   button {
     width: fit-content;
   }
-  
+
   small {
     line-height: 1.33;
   }
