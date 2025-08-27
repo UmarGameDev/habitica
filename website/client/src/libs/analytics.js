@@ -106,8 +106,9 @@ export async function setup () {
   const user = _getConsentedUser();
   if (!user) return;
   await Vue.loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`);
-  if (DEBUG_ENABLED || !IS_PRODUCTION) {
-    window.gtag('config', GA_ID, { debug_mode: true });
-  }
+  window.gtag('config', GA_ID, {
+    debug_mode: DEBUG_ENABLED || !IS_PRODUCTION,
+    user_id: user._id,
+  });
   amplitude.getInstance().init(AMPLITUDE_KEY);
 }
