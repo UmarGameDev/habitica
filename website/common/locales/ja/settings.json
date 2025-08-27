@@ -257,5 +257,16 @@
     "resetTextLocal": "本当に間違いない場合は、下記のテキストボックスにパスワードを入力してください。",
     "resetTextSocial": "本当に間違いない場合は、下のテキストボックスに<b>\"<%= magicWord %>\"</b>と入力してください。",
     "contentRelease": "コンテンツリリースとイベント",
-    "transaction_subscription_bonus": "<b>有料プラン</b>ボーナス"
+    "transaction_subscription_bonus": "<b>有料プラン</b>ボーナス",
+    "denyNonEssentialCookies": "不要なCookieを拒否する",
+    "yourPrivacyPreferences": "プライバシー設定",
+    "managePrivacyPreferences": "プライバシー設定を管理する",
+    "savePreferences": "設定を保存する",
+    "habiticaPrivacyPolicy": "Habiticaのプライバシーポリシー",
+    "acceptAllCookies": "全てのCookieに同意する",
+    "learnMorePrivacy": "詳しくは<a href='/static/privacy' target='_blank'>プライバシーポリシー</a>をご覧ください。",
+    "requiredToRun": "ウェブサイトやアプリが適切に機能するために必要なCookieです。",
+    "strictlyNecessary": "厳密に必要",
+    "alwaysActive": "常にアクティブ",
+    "performanceAnalytics": "パフォーマンスと分析"
 }

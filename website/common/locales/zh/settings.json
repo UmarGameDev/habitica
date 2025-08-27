@@ -257,5 +257,19 @@
     "resetTextLocal": "如果您已确定，请在下方的文本框中输入您的密码。",
     "resetTextSocial": "如果您已确定，请在下方的文本框中输入 <b>\"<%=magicWord %>\"</b>。",
     "contentRelease": "内容发布与活动",
-    "transaction_subscription_bonus": "<b>订阅</b>奖励"
+    "transaction_subscription_bonus": "<b>订阅</b>奖励",
+    "acceptAllCookies": "接受全部Cookies",
+    "alwaysActive": "始终启用",
+    "requiredToRun": "这些是确保我们的网站和应用程序正常运行所必需的。",
+    "performanceAnalytics": "性能与分析",
+    "habiticaPrivacyPolicy": "Habitica的隐私政策",
+    "privacyOverview": "在当今世界，似乎每家公司都试图从您的数据中获利。这导致要找到一款能帮您培养好习惯的应用变得十分困难。Habitica 使用的 Cookie 仅会存储数据用于分析性能、处理支持请求，并为您提供最佳的游戏化体验。您随时可以在账户设置中更改此选项。",
+    "denyNonEssentialCookies": "拒绝非必要Cookies",
+    "privacySettingsOverview": "Habitica使用Cookies来分析性能、处理支持请求，并为您提供最佳的游戏化体验。为此，我们需要请求以下权限。您可以随时在您的账号设置中修改这些权限设置。",
+    "learnMorePrivacy": "如需了解更多信息，请查阅我们的<a href='/static/privacy' target='_blank'>隐私政策</a>。",
+    "usedForSupport": "这些被用于改善我们网站和应用程序的用户体验、性能及服务。我们的支持团队在处理请求和错误报告时会使用这些数据。",
+    "managePrivacyPreferences": "管理隐私偏好",
+    "strictlyNecessary": "绝对必要",
+    "yourPrivacyPreferences": "您的隐私偏好",
+    "savePreferences": "保存偏好设置"
 }

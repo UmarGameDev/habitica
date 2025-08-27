@@ -257,5 +257,19 @@
     "contentRelease": "Sorties de contenu + Évènements",
     "resetTextSocial": "Si vous êtes absolument sûr·e, tapez <b>\"<%= magicWord %>\"</b> dans le champ de texte ci-dessous.",
     "resetTextLocal": "Si vous êtes absolument sûr·e, tapez votre mot de passe dans le champ de texte ci-dessous.",
-    "transaction_subscription_bonus": "Bonus d'<b>Abonnement</b>"
+    "transaction_subscription_bonus": "Bonus d'<b>Abonnement</b>",
+    "denyNonEssentialCookies": "Refuser les Cookies non-essentiels",
+    "yourPrivacyPreferences": "Vos Préférences de Confidentialité",
+    "strictlyNecessary": "Strictement Nécessaire",
+    "alwaysActive": "Toujours Actif",
+    "requiredToRun": "Sont requis par notre site et applications pour un fonctionnement optimal.",
+    "acceptAllCookies": "Accepter tous les Cookies",
+    "managePrivacyPreferences": "Configurez vos Préférences de Confidentialité",
+    "learnMorePrivacy": "Pour en savoir plus, consultez notre <a href='/static/privacy' target='_blank'>Politique de Confidentialité</a>.",
+    "performanceAnalytics": "Performance et Analytique",
+    "savePreferences": "Enregistrer les Préférences",
+    "habiticaPrivacyPolicy": "Politique de Confidentialité d'Habitica",
+    "privacyOverview": "Dans le monde actuel, on peut avoir l'impression que toutes les entreprises veulent exploiter nos données, ce qui peut rendre la recherche d'application pour améliorer ses habitudes compliquée. Habitica n'utilise les cookies que pour enregistrer des données permettant l'analyse de performance, répondre aux requêtes du support, et vous faire profiter de la meilleure expérience ludique possible. Vous pouvez changer vos préférences à tout moment dans les paramètres de votre compte.",
+    "usedForSupport": "Sont utilisés pour améliorer l'expérience utilisat·eur·rice, les performances et les services pour notre site et nos applications. Ces données sont utilisées par l'équipe du support pour la résolution de requêtes et rapports de bug.",
+    "privacySettingsOverview": "Habitica utilise les cookies pour enregistrer des données permettant l'analyse de performance, répondre aux requêtes du support, et vous faire profiter de la meilleure expérience ludique possible. Pour cela, nous devons vous demander quelques autorisations. Vous pouvez changer vos préférences à tout moment dans les paramètres de votre compte."
 }

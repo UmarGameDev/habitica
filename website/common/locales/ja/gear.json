@@ -3140,7 +3140,7 @@
     "weaponSpecialFall2025RogueText": "ガイコツの刃",
     "weaponSpecialFall2025HealerText": "コボルドの斧",
     "weaponMystery202511Text": "霜の剣",
-    "weaponArmoireBlacksmithsHammerText": "鍛冶のハンマー",
+    "weaponArmoireBlacksmithsHammerText": "鍛冶屋のハンマー",
     "armorSpecialFall2025WarriorText": "サスクワッチのよろい",
     "armorSpecialFall2025WarriorNotes": "サスクワッチの大きな足と体でも、このよろいには大きすぎません。体質が<%= con %>上がります。2025年秋の限定装備。",
     "armorSpecialFall2025RogueText": "ガイコツのよろい",
@@ -3155,5 +3155,9 @@
     "headArmoireFloppyOrangeHatText": "ゆったり垂れるオレンジの帽子",
     "headArmoireFloppyOrangeHatNotes": "このシンプルな帽子は魔法にかかって鮮やかなオレンジ色がつきました。すべての能力値がそれぞれ<%= attrs %>上がります。ラッキー宝箱：オレンジのルームウェアセット（アイテム1/3 ）。",
     "shieldSpecialFall2025WarriorText": "サスクワッチの盾",
-    "bodyMystery202509Text": "風に吹かれた旅人のマフラー"
+    "bodyMystery202509Text": "風に吹かれた旅人のマフラー",
+    "backMystery202510Text": "空中に浮かぶグールの翼",
+    "eyewearMystery202510Text": "空中に浮かぶグールの目",
+    "headMystery202503Text": "ジェイドのジャガーノートの髪",
+    "eyewearMystery202503Text": "ジェイドのジャガーノートの目"
 }
