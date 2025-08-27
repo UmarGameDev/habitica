@@ -257,5 +257,19 @@
     "resetTextLocal": "Si estás completamente seguro, escribe tu contraseña en el siguiente cuadro de texto.",
     "resetTextSocial": "Si estás completamente seguro, escribe<b>\"<%= magicWord %>\"</b> en el siguiente cuadro de texto.",
     "contentRelease": "Nuevos Contenidos + Eventos",
-    "transaction_subscription_bonus": "<b>Bono de Suscripción</b>"
+    "transaction_subscription_bonus": "<b>Bono de Suscripción</b>",
+    "denyNonEssentialCookies": "Rechazar las Cookies No Esenciales",
+    "managePrivacyPreferences": "Administrar Tus Preferencias de Privacidad",
+    "learnMorePrivacy": "Para saber más, por favor revisa nuestra <a href='/static/privacy' target='_blank'>Política de Privacidad</a>.",
+    "strictlyNecessary": "Estrictamente Necesarias",
+    "alwaysActive": "Siempre Activas",
+    "performanceAnalytics": "Rendimiento y Analíticas",
+    "savePreferences": "Guardar Preferencias",
+    "habiticaPrivacyPolicy": "Política de Privacidad de Habitica",
+    "yourPrivacyPreferences": "Tus Preferencias de Privacidad",
+    "requiredToRun": "Estás se requieren para que nuestra página web y nuestras aplicaciones funcionen de la mejor manera.",
+    "privacySettingsOverview": "Habitica usa las cookies para analizar el rendimiento, gestionar solicitudes de soporte y brindarle la mejor experiencia de juego posible. Para eso, necesitamos pedirte los siguientes permisos. Puedes cambiar tus preferencias en cualquier momento desde los ajustes de tu cuenta.",
+    "usedForSupport": "Estás se usan para mejorar la experiencia del usuario, el rendimiento, y los servicios de nuestra página web y nuestras aplicaciones. Estos datos se usan para ayudar a nuestro equipo de soporte cuando tienen que gestionar tanto solicitudes como informes de error.",
+    "privacyOverview": "En el mundo en el que vivimos, parece que todas las compañías buscan obtener beneficios de los datos que recopilan acerca de nosotros. Esto nos dificulta la búsqueda de una aplicación que nos ayude a mejorar nuestros hábitos y estilo de vida. Habitica usa cookies que almacenan nuestros datos solo para analizar el rendimiento, gestionar solicitudes de soporte y brindarnos la mejor experiencia de juego posible. Aún así puedes cambiar tus preferencias en cualquier momento desde los ajustes de tu cuenta.",
+    "acceptAllCookies": "Aceptar Todas las Cookies"
 }

@@ -1830,5 +1830,14 @@
     "headMystery202507Text": "Chapéu de Skatista Irado",
     "headArmoireFlyFishingHatText": "Chapéu de Fly Fishing",
     "backMystery202506Notes": "Traz um brilho quente com você conforme avança sobre suas tarefas diárias. Não confere benefícios. Junho 2025 Item de Assinante.",
-    "weaponSpecialWinter2021MageText": "Fase Lunar Mágica"
+    "weaponSpecialWinter2021MageText": "Fase Lunar Mágica",
+    "weaponSpecialSummer2021WarriorText": "Lâmina Aquosa",
+    "weaponSpecialWinter2021HealerNotes": "Conduza suas batalhas com floreios e energia! Aumenta a Inteligência em <%= int %>. Equipamento de Inverno Edição Limitada 2020-2021.",
+    "weaponSpecialSummer2021RogueNotes": "Qualquer monstro predador que ousar se aproximar sentirá a ferroada dos seus amigos protetores! Aumenta a Força em <%= str %>. Equipamento de Verão de 2021 de Edição Limitada.",
+    "weaponSpecialSummer2021MageText": "Bastão Nautilus",
+    "weaponSpecialSummer2021WarriorNotes": "Esta lâmina brilhante pode fluir como água, mas pode cortar o cerne dos problemas mais complicados! Aumenta a Força em <%= str %>. Equipamento de edição limitada do verão de 2021.",
+    "weaponSpecialWinter2021HealerText": "Haste com flange de lascas",
+    "weaponSpecialSummer2021MageNotes": "Quer suas ambições mágicas cheguem a vinte mil léguas de profundidade, ou se você pretende apenas mergulhar nas profundezas da arte, este instrumento brilhante lhe servirá bem! Aumenta a Inteligência por <%= int %> e Percepção por <%= per %>. Equipamentos de verão de edição limitada de 2021.",
+    "weaponSpecialSummer2021HealerText": "Cajado de Milho",
+    "armorArmoireChefsJacketText": "Jaqueta de chef"
 }

@@ -350,7 +350,7 @@
     "questEggRobotText": "Robô",
     "questEggDolphinMountText": "Golfinho",
     "hatchingPotionShadow": "da Escuridão",
-    "premiumPotionUnlimitedNotes": "Não utilizável em ovos de mascotes adquiridos em missões.",
+    "premiumPotionUnlimitedNotes": "Não utilizável em Ovos de Mascotes adquiridos em missões.",
     "hatchingPotionAmber": "de Âmbar",
     "hatchingPotionAurora": "da Aurora",
     "hatchingPotionRuby": "de Rubi",
@@ -405,5 +405,10 @@
     "hatchingPotionJade": "de Jade",
     "questEggOtterMountText": "Lontra",
     "questEggOtterAdjective": "uma pérfida",
-    "questEggPlatypusText": "Ornitorrinco"
+    "questEggPlatypusText": "Ornitorrinco",
+    "questEggAlpacaText": "Alpaca",
+    "questEggAlpacaMountText": "Alpaca",
+    "questEggAlpacaAdjective": "Um superlotado",
+    "wackyPotionNotes": "Despeje isso em um ovo e ele chocará como um animal de estimação Maluco <%= potText(locale) %>.",
+    "wackyPotionAddlNotes": "Não pode ser convertido a Montaria ou usado em Ovos de Mascotes de missão."
 }

@@ -287,7 +287,7 @@
     "worldBossBullet3": "Você pode continuar a fazer Missões normais com inimigos comuns, o dano de suas tarefas será aplicado em ambos",
     "worldBossBullet4": "Visite a Taverna com frequência para ver o progresso na luta contra o Chefão Global e conferir seus Ataques de Fúria",
     "worldBoss": "Chefão Global",
-    "groupPlanTitle": "Precisa de mais para seu Time?",
+    "groupPlanTitle": "Precisa de Mais para Seu Time?",
     "groupPlanDesc": "Gerenciar um time pequeno ou organizar tarefas domésticas? Nosso planos do de Time te dão acesso exclusivo a um quadro para tarefas privadas e uma área de bate-papo dedicado a você e os membros dos seu grupo.",
     "billedMonthly": "*cobrado como uma assinatura mensal",
     "teamBasedTasksList": "Quadro de tarefas compartilhado",
@@ -428,5 +428,5 @@
     "readyToUpgrade": "Pronto para atualizar?",
     "interestedLearningMore": "Interessado em aprender mais?",
     "checkGroupPlanFAQ": "Confira as <a href='/static/faq#what-is-group-plan'>Perguntas frequentes sobre planos de grupo</a> para saber como aproveitar ao máximo sua experiência de tarefas compartilhadas.",
-    "messageCopiedToClipboard": "Mensagem copiada para a área de tranferência."
+    "messageCopiedToClipboard": "Mensagem copiada para a área de transferência."
 }

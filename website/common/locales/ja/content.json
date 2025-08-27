@@ -1,6 +1,6 @@
 {
     "potionText": "体力回復の薬",
-    "potionNotes": "体力を15回復(瞬時)",
+    "potionNotes": "体力を15回復（今すぐ使用）",
     "armoireText": "ラッキー宝箱",
     "armoireNotesFull": "ラッキー宝箱を開けると、特別な装備・経験値・えさの内どれかがランダムにもらえます！ 残りの装備パーツの数：",
     "armoireLastItem": "ラッキー宝箱で貴重な装備の最後の1つを見つけました。",

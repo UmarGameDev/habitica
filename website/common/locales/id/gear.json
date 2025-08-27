@@ -2425,5 +2425,6 @@
     "armorArmoireBasketballUniformText": "Seragam Bola Basket",
     "gearItemsCompleted": "Kamu telah memiliki semua peralatan <%= klass %>! Peralatan baru dirilis selama Gala musiman.",
     "moreArmoireGearAvailable": "Sampai saat itu, ada <%= armoireCount %> peralatan di Peti Ajaib yang bisa ditemukan!",
-    "moreArmoireGearComing": "Peti Ajaib juga mendapatkan stok baru setiap bulan!"
+    "moreArmoireGearComing": "Peti Ajaib juga mendapatkan stok baru setiap bulan!",
+    "weaponSpecialFall2023RogueText": "Sendok Supernatural"
 }
