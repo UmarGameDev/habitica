@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { authAsCredentialsState, LOCALSTORAGE_AUTH_KEY } from '@/libs/auth';
 
+const GA_ID = import.meta.env.GA_ID;
+
 function saveLocalDataAuth (store, apiId, apiToken) {
   const credentialsObj = {
     auth: {
