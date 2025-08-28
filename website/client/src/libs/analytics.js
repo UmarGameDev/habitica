@@ -80,7 +80,9 @@ export function track (properties, options = {}) {
     // Track events on the server by default
     if (trackOnClient === true) {
       amplitude.getInstance().logEvent(properties.eventAction, properties);
-      window.gtag('event', properties.eventAction, properties);
+      if (window.gtag) {
+        window.gtag('event', properties.eventAction, properties);
+      }
     } else {
       const store = getStore();
       store.dispatch('analytics:trackEvent', properties);
@@ -94,7 +96,9 @@ export function updateUser (properties = {}) {
   // Use nextTick to avoid blocking the UI
   Vue.nextTick(() => {
     _gatherUserStats(properties);
-    window.gtag('set', 'user_properties', properties);
+    if (window.gtag) {
+      window.gtag('set', 'user_properties', properties);
+    }
     forEach(properties, (value, key) => {
       const identify = new amplitude.Identify().set(key, value);
       amplitude.getInstance().identify(identify);
