@@ -21,7 +21,9 @@
         <label class="mb-0">
           {{ $t('performanceAnalytics') }}
         </label>
-        <toggle-switch />
+        <toggle-switch
+          v-model="privacyConsent"
+        />
       </div>
       <small>
         {{ $t('usedForSupport') }}
@@ -44,13 +46,22 @@
       </small>
     </div>
     <div class="d-flex flex-column text-center">
-      <button class="btn btn-primary mb-2">
+      <button
+        class="btn btn-primary mb-2"
+        @click="consent(true)"
+      >
         {{ $t('acceptAllCookies') }}
       </button>
-      <button class="btn btn-secondary mb-2">
+      <button
+        class="btn btn-primary mb-2"
+        @click="consent(false)"
+      >
         {{ $t('denyNonEssentialCookies') }}
       </button>
-      <button class="btn btn-secondary mb-3">
+      <button
+        class="btn btn-secondary mb-3"
+        @click="consent(privacyConsent)"
+      >
         {{ $t('savePreferences') }}
       </button>
       <a
@@ -92,7 +103,17 @@ export default {
     closeX,
     ToggleSwitch,
   },
+  data () {
+    return {
+      privacyConsent: true,
+    };
+  },
   methods: {
+    consent (decision) {
+      localStorage.setItem('analyticsConsent', decision);
+      this.$root.$emit('privacy-complete');
+      this.close();
+    },
     close () {
       this.$root.$emit('bv::hide::modal', 'privacy-preferences');
     },

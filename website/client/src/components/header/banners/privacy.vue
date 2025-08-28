@@ -98,6 +98,9 @@ export default {
     ) {
       this.hidden = true;
     }
+    this.$root.$on('privacy-complete', () => {
+      this.close();
+    });
   },
   methods: {
     close () {
