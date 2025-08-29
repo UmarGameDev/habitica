@@ -29,7 +29,7 @@
       </h3>
       <p
         v-once
-        class="gray-50"
+        class="gray-50 mb-4"
         v-html="$t('privacySettingsOverview') + ' ' + $t('learnMorePrivacy')"
       >
       </p>
@@ -37,31 +37,37 @@
         class="d-flex justify-content-center"
       >
         <div class="w-66">
-          <div class="mb-28p">
-            <div
-              class="d-flex justify-content-between align-items-center"
-            >
-              <div class="settings-label w-50"> {{ $t('strictlyNecessary') }}</div>
-              <div class="settings-label mini green-10"> {{ $t('alwaysActive') }}</div>
-            </div>
-            <small class="gray-100">
-              {{ $t('requiredToRun') }}
-            </small>
-          </div>
           <div
-            class="d-flex justify-content-between align-items-center"
+            class="d-flex justify-content-between align-items-center mb-1"
           >
-            <div class="settings-label w-50"> {{ $t('performanceAnalytics') }}</div>
+            <label class="settings-label w-50 mb-0">
+              {{ $t('performanceAnalytics') }}
+            </label>
             <toggle-switch
+              class="mb-auto"
               v-model="user.preferences.analyticsConsent"
               @change="prefToggled()"
             />
           </div>
-          <div class="mb-4">
-            <small class="gray-100">
+          <div class="mb-28p">
+            <small class="gray-50">
               {{ $t('usedForSupport') }}
             </small>
           </div>
+          <div
+            class="d-flex justify-content-between align-items-center mb-1"
+          >
+            <label class="settings-label w-50 mb-0">
+              {{ $t('strictlyNecessary') }}
+            </label>
+            <toggle-switch
+              :checked="true"
+              :disabled="true"
+            />
+          </div>
+          <small class="gray-50">
+            {{ $t('requiredToRun') }}
+          </small>
           <save-cancel-buttons
             class="mb-4"
             :disable-save="!mixinData.inlineSettingMixin.sharedState.inlineSettingUnsavedValues"
@@ -81,17 +87,16 @@
     width: fit-content;
   }
 
+  small {
+    line-height: 1.33;
+  }
+
   .mb-28p {
     margin-bottom: 28px;
   }
 
-  .settings-label.mini {
-    font-size: 12px;
-    text-align: right;
-  }
-
-  small {
-    line-height: 1.33;
+  .popover-box {
+    margin-top: 1px;
   }
 
   .w-66 {
