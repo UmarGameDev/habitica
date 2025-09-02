@@ -256,5 +256,6 @@
     "dateFormatDisclaimer": "Настройте формат даты в Habitica.",
     "audioThemeDisclaimer": "Звуковые темы добавляют дополнительные звуковые эффекты на сайт Habitica. Уровень громкости регулируется с помощью настроек громкости компьютера.",
     "resetTextSocial": "Если вы точно уверены, введите <b>\"<%= magicWord %>\"</b> в поле ниже.",
-    "showLevelUpModal": "Получение уровня"
+    "showLevelUpModal": "Получение уровня",
+    "transaction_subscription_bonus": "Бонус за <b>подписку</b>"
 }

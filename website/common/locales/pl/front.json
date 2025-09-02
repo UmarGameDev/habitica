@@ -9,7 +9,7 @@
     "companyContribute": "Wspomaganie Habitica",
     "companyDonate": "Darowizny dla Habitica",
     "forgotPassword": "Zapomniałeś hasła?",
-    "emailNewPass": "Wyślij link do zresetowania hasła mailem",
+    "emailNewPass": "Wyślij link do zresetowania hasła przez email",
     "forgotPasswordSteps": "Podaj nazwę użytkowinka lub adres email, którego użyłeś do założenia konta.",
     "sendLink": "Wyślij Link",
     "featuredIn": "Dostępne w",
@@ -65,7 +65,7 @@
     "pkQuestion3": "Czemu dodaliście funkcje społeczne?",
     "pkAnswer3": "Społeczna presja jest ogromnym czynnikiem motywacyjnym dla dużej liczby osób, więc wiedzieliśmy, że chcemy mieć silną społeczność, która będzie pilnowała odpowiedzialności innych za swoje cele, a także zachęcała do osiągania sukcesów. Szczęśliwie jedną z rzeczy, której gry wieloosobowe dobrze sprzyjają jest budowanie poczucia społeczności wśród ich uczestników! Habitica zapożyczyła strukturę społeczeństwa z tych typów gier. Chociaż niektórzy wolą grać solo to większość decyduje się by uformować sieć wsparcia w niewielkiej Drużynie bliskich przyjaciół, która zachęca do społecznej odpowiedzialności poprzez takie funkcje jak na przykład Misje, gdzie członkowie Drużyny wspólnie dzielą się swoją produktywnością by razem zwalczać potwory.",
     "pkQuestion4": "Czemu omijanie zadań zmniejsza zdrowie Twojego awatara?",
-    "pkAnswer4": "Jeśli opuścisz jeden z Twoich Codziennych to Twój awatar straci życie następnego dnia. To służy jako ważny czynnik motywujący by zachęcić ludzi do podążania za ich celami, bo ludzie naprawdę nienawidzą ranić swój mały awatar. Plus odpowiedzialność społeczna jest krytycznie ważna dla mnóstwa ludzi. Jeśli walczysz z potworami razem ze Swoimi przyjaciółmi to omijanie zadań rani także ich awatary.",
+    "pkAnswer4": "Jeśli pominiesz jeden z Twoich Codziennych Celów, Twój awatar straci trochę punktów życia następnego dnia. To służy jako ważny czynnik motywujący, by podążać za wyznaczonymi celami, bo ludzie naprawdę nie znoszą ranić swojego małego awatara! Dodatkowo odpowiedzialność społeczna jest dla wielu osób bardzo ważna - jeśli walczysz z potworem razem z przyjaciółmi, to pomijanie zadań rani także ich awatary.",
     "pkQuestion5": "Co odróżnia Habitike od innych programów grywializujących?",
     "pkAnswer5": "Jeden z powodów dlaczego Habitika odniosła taki duży sukces w używaniu grywalizacji jest to, że wkładamy dużo wysiłku w myśleniu o aspektach gry tak by zapewnić ich rozrywkowość. Umieściliśmy także dużo społecznych komponent bo czujemy, że niektóre z najbardziej motywujących gier pozwala Ci grać z przyjaciółmi. Badania także wykazały, że jest łatwiej formować nawyki kiedy musisz być odpowiedzialny względem innych ludzi.",
     "pkQuestion6": "Kim jest typowy użytkownik Habitici?",
@@ -122,7 +122,7 @@
     "passwordConfirmationMatch": "Potwierdzenie hasła nie jest identyczne z hasłem.",
     "passwordResetPage": "Zresetuj hasło",
     "passwordReset": "Jeżeli posiadamy Twój adres e-mail lub nazwę użytkownika, instrukcja jak ustawić nowe hasło, zostanie wysłana do Ciebie mailem.",
-    "invalidLoginCredentialsLong": "Ojej - Twój adres e-mail / nazwa użytkownika lub hasło jest nieprawidłowe.\n- Upewnij się, czy są wpisane poprawnie. Nazwa użytkownika i hasło są wrażliwe na wielkość liter.\n- Możliwe, że rejestrację wykonano przez Facebook lub Google, a nie e-mail, sprawdź czy to prawda.\n- Jeśli hasło uległo zapomnieniu, kliknij \"Nie pamiętam hasła\".",
+    "invalidLoginCredentialsLong": "Twój adres e-mail, nazwa użytkownika lub hasło jest nieprawidłowe. Spróbuj ponownie lub wybierz opcję \"Nie pamiętam hasła\".",
     "invalidCredentials": "Takie konto nie istnieje.",
     "accountSuspended": "Konto użytkownika o ID \"<%= userId %>\", zostało zablokowane z powodu naruszenia zasad [Wytycznych dla społeczności](https://habitica.com/static/community-guidelines) lub [Regulaminu](https://habitica.com/static/terms). Aby uzyskać szczegółowe informacje o naruszeniu lub możliwościach odblokowania, prosimy skontaktować przy pomocy e-maila z Menedżerem społeczności <%= communityManagerEmail %> lub poprosić rodzica lub opiekuna o przekazanie wiadomości e-mail. Prosimy w wiadomości e-mail wpisać ID użytkownika oraz podać swoją \"@nazwę\" użytkownika.",
     "accountSuspendedTitle": "Konto zostało zawieszone",
@@ -182,5 +182,9 @@
     "incorrectResetPhrase": "Wpisz <%= magiczne słowo %> wielkimi literami, aby zresetować twoje konto.",
     "emailBlockedRegistration": "Ten adres e-mail nie może zostać zarejestrowany. Jeżeli sądzisz, że jest to błąd, skontaktuj się z nami przez admin@habitica.com.",
     "marketing3Lead1Title": "Aplikacje na Androida i iOs",
-    "marketing4Lead3Button": "Zacznij już dzisiaj"
+    "marketing4Lead3Button": "Zacznij już dzisiaj",
+    "enterValidEmail": "Wprowadź prawidłowy adres email.",
+    "minPasswordLengthLogin": "Twoje hasło ma co najmniej 8 znaków.",
+    "whatToCallYou": "Jak chcesz, by się do ciebie zwracać?",
+    "acceptPrivacyTOS": "Potwierdzasz, że masz co najmniej 18 lat oraz że przeczytałeś i zgadzasz się na nasze <a href='/static/terms' target='_blank'>Warunki Użytkowania</a> i <a href='/static/privacy' target='_blank'>Politykę Prywatności</a>"
 }

@@ -264,7 +264,7 @@
     "summer2024SeaAnemoneMageSet": "イソギンチャクのセット（魔道士）",
     "fall2024FieryImpWarriorSet": "ファイアインプセット（戦士）",
     "fall2024UnderworldSorcerorMageSet": "黄泉の国の魔術師セット（魔道士）",
-    "gemSaleLimitationsText": "このプロモーションは期間限定イベント中のみ有効です。このイベントは<%= eventStartMonth %>月 <%= eventStartOrdinal %> 日 <%= eventStartTime %> <%= timeZone %>に始まり、<%= eventEndMonth %> 月<%= eventEndOrdinal %> 日<%= eventEndTime %> <%= timeZone %>に終了します。ジェムを自分で購入した方のみ対象です。",
+    "gemSaleLimitationsText": "このプロモーションは期間限定イベント中のみ有効です。このイベントは<%= eventStartMonth %><%= eventStartOrdinal %> <%= eventStartTime %> <%= timeZone %>に始まり、<%= eventEndMonth %><%= eventEndOrdinal %><%= eventEndTime %> <%= timeZone %>に終了します。ジェムを自分で購入した方のみ対象です。",
     "winter2025MooseWarriorSet": "ヘラジカの戦士セット",
     "winter2025AuroraMageSet": "オーロラの魔道士セット",
     "winter2025StringLightsHealerSet": "ストリングライトの治療師セット",

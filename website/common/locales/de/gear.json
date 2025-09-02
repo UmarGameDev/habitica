@@ -3376,5 +3376,11 @@
     "shieldMystery202506Notes": "Vertreibe die Dunkelheit und lasse deiner Umgebung warme und herzliche Strahlen zuteilwerden wo immer du auch bist. Gewährt keinen Attributbonus. Juni 2025 Abonnentengegenstand.",
     "backMystery202506Notes": "Trage ein warmes Leuchten mit dir, wenn du deinen täglichen Aufgaben nachgehst. Gewährt keinen Attributbonus. Juni 2025 Abonnentengegenstand.",
     "weaponSpecialFall2025WarriorText": "Bigfoot Axt",
-    "weaponSpecialFall2025WarriorNotes": "Eine mächtige Waffe, um einen sicheren Pfad durch einen Herbstwald voller Komplikationen zu schlagen. Erhöht Stärke um <%= str %>. Limitierte Ausgabe Herbstausrüstung 2025."
+    "weaponSpecialFall2025WarriorNotes": "Eine mächtige Waffe, um einen sicheren Pfad durch einen Herbstwald voller Komplikationen zu schlagen. Erhöht Stärke um <%= str %>. Limitierte Ausgabe Herbstausrüstung 2025.",
+    "weaponSpecialFall2025RogueText": "Skelettklinge",
+    "weaponSpecialFall2025RogueNotes": "Eine mächtige Waffe, um einen sicheren Pfad durch einen Herbstwald voller Hindernisse zu schlagen. Erhöht Stärke um <%= str %>. Limitierte Ausgabe Herbstausrüstung 2025.",
+    "weaponSpecialFall2025HealerText": "Kobold Axt",
+    "weaponSpecialFall2025HealerNotes": "Eine mächtige Waffe, um einen sicheren Pfad durch einen Herbstwald voller Erschwernisse zu schlagen. Erhöht Intelligenz um <%= int %>. Limitierte Ausgabe Herbstausrüstung 2025.",
+    "weaponSpecialFall2025MageText": "Geist-mit-Maske Axt",
+    "weaponSpecialFall2025MageNotes": "Eine mächtige Waffe, um einen sicheren Pfad durch einen Herbstwald voller Schrecken zu schlagen. Erhöht Intelligenz um <%= int %> und Wahrnehmung um <%= per %>. Limitierte Ausgabe Herbstausrüstung 2025."
 }

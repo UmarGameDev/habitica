@@ -122,7 +122,7 @@
     "gemBenefit4": "重置角色属性点数及更改角色职业。",
     "subscriptionBenefit1": "最多可用金币购买50颗宝石，在市场上购买副本，自定义装扮，宠物以及更多其他好物！",
     "subscriptionBenefit3": "在Habitica发现更多物品，每日享受双倍物品掉落上限！",
-    "subscriptionBenefit4": "穿上最新的独特装备 。立即订阅 ，即可获得<%=月%> 的<%= currentMysterySetName%>！",
+    "subscriptionBenefit4": "穿上最新的独特装备 。立即订阅 ，即可获得<%= month %> 的<%= currentMysterySetName%>！",
     "subscriptionBenefit5": "现在订阅即可获得专属皇家紫色鹿角兔宠物！",
     "subscriptionBenefit6": "每月可获得1个神秘沙漏，在时空旅行者商店使用，不要错过任何物品 ！",
     "purchaseAll": "购买套装",

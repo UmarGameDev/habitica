@@ -1777,5 +1777,8 @@
     "weaponSpecialFall2019MageNotes": "Niezależnie od tego, czy chodzi o wykuwanie piorunów, wznoszenie fortyfikacji, czy po prostu wzbudzanie przerażenia w sercach śmiertelników, ta laska daje moc gigantów do czynienia cudów. Zwiększa inteligencję o <%= int %> i percepcję o <%= per %>. Limitowana edycja 2019 Jesienne Wyposażenie.",
     "weaponSpecialFall2019HealerText": "Przerażające Filakterium",
     "weaponSpecialFall2019HealerNotes": "To filakterium może wzywać duchy dawno pokonanych zadań i czerpać z ich uzdrawiającej mocy. Zwiększa Inteligencję o <%= int %>. Edycja limitowana 2019 Jesienne Wyposażenie.",
-    "weaponSpecialFall2019MageText": "Jednooka Laska"
+    "weaponSpecialFall2019MageText": "Jednooka Laska",
+    "eyewearArmoireRoseColoredGlassesNotes": "Te okulary pomogą ci dostrzec najlepszą stronę każdej sytuacji, a te stylowe oprawki pomogą ci również wyglądać jak najlepiej. Zwiększa Percepcję o <%= per %>. Zaczarowana Szafa: Zestaw Optymisty (przedmiot 2 z 4).",
+    "headAccessoryMystery202212Text": "Lodowa Tiara",
+    "headAccessoryMystery202212Notes": "Wznieś swoje ciepło i przyjaźń na nowy poziom dzięki tej ozdobnej złotej tiarze. Nie zapewnia żadnych korzyści. Przedmiot dla subskrybentów z grudnia 2022 r."
 }
