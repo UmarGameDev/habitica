@@ -3,6 +3,7 @@ import isEqual from 'lodash/isEqual';
 import keys from 'lodash/keys';
 import pick from 'lodash/pick';
 import amplitude from 'amplitude-js';
+import { gtag, install } from 'ga-gtag';
 import Vue from 'vue';
 import getStore from '@/store';
 
@@ -10,8 +11,10 @@ const AMPLITUDE_KEY = import.meta.env.AMPLITUDE_KEY;
 const DEBUG_ENABLED = import.meta.env.DEBUG_ENABLED === 'true';
 const GA_ID = import.meta.env.GA_ID;
 const IS_PRODUCTION = import.meta.env.NODE_ENV === 'production';
-
 const REQUIRED_FIELDS = ['eventCategory', 'eventAction'];
+
+let analyticsLoading = false;
+let analyticsReady = false;
 
 function _getConsentedUser () {
   const store = getStore();
@@ -63,15 +66,22 @@ function _gatherUserStats (properties) {
   if (user.purchased.plan.planId) properties.subscription = user.purchased.plan.planId;
 }
 
-export function setUser () {
-  const user = _getConsentedUser();
-  if (!user) return;
-  amplitude.getInstance().setUserId(user._id);
+export function safeSetup (userId) {
+  if (analyticsLoading || analyticsReady) return;
+  analyticsLoading = true;
+  install(GA_ID, {
+    debug_mode: DEBUG_ENABLED || !IS_PRODUCTION,
+    user_id: userId,
+  });
+  amplitude.getInstance().init(AMPLITUDE_KEY, userId);
+  analyticsReady = true;
+  analyticsLoading = false;
 }
 
 export function track (properties, options = {}) {
   const user = _getConsentedUser();
   if (!user) return;
+  safeSetup(user._id);
   // Use nextTick to avoid blocking the UI
   Vue.nextTick(() => {
     if (_doesNotHaveRequiredFields(properties)) return;
@@ -80,9 +90,7 @@ export function track (properties, options = {}) {
     // Track events on the server by default
     if (trackOnClient === true) {
       amplitude.getInstance().logEvent(properties.eventAction, properties);
-      if (window.gtag) {
-        window.gtag('event', properties.eventAction, properties);
-      }
+      gtag('event', properties.eventAction, properties);
     } else {
       const store = getStore();
       store.dispatch('analytics:trackEvent', properties);
@@ -93,26 +101,14 @@ export function track (properties, options = {}) {
 export function updateUser (properties = {}) {
   const user = _getConsentedUser();
   if (!user) return;
+  safeSetup(user._id);
   // Use nextTick to avoid blocking the UI
   Vue.nextTick(() => {
     _gatherUserStats(properties);
-    if (window.gtag) {
-      window.gtag('set', 'user_properties', properties);
-    }
+    gtag('set', 'user_properties', properties);
     forEach(properties, (value, key) => {
       const identify = new amplitude.Identify().set(key, value);
       amplitude.getInstance().identify(identify);
     });
   });
-}
-
-export async function setup () {
-  const user = _getConsentedUser();
-  if (!user) return;
-  await Vue.loadScript(`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`);
-  window.gtag('config', GA_ID, {
-    debug_mode: DEBUG_ENABLED || !IS_PRODUCTION,
-    user_id: user._id,
-  });
-  amplitude.getInstance().init(AMPLITUDE_KEY);
 }

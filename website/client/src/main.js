@@ -12,11 +12,7 @@ import {
   CollapsePlugin,
 } from 'bootstrap-vue';
 import Fragment from 'vue-fragment';
-import LoadScript from 'vue-plugin-load-script';
 import AppComponent from './app';
-import {
-  setup as setupAnalytics,
-} from '@/libs/analytics';
 import { setUpLogging } from '@/libs/logging';
 import router from './router/index';
 import getStore from './store';
@@ -49,10 +45,8 @@ Vue.use(TooltipPlugin);
 Vue.use(NavbarPlugin);
 Vue.use(CollapsePlugin);
 Vue.use(Fragment.Plugin);
-Vue.use(LoadScript);
 
 setUpLogging();
-setupAnalytics();
 const store = getStore();
 
 if (import.meta.env.TIME_TRAVEL_ENABLED === 'true') {
