@@ -3159,5 +3159,16 @@
     "backMystery202510Text": "空中に浮かぶグールの翼",
     "eyewearMystery202510Text": "空中に浮かぶグールの目",
     "headMystery202503Text": "ジェイドのジャガーノートの髪",
-    "eyewearMystery202503Text": "ジェイドのジャガーノートの目"
+    "eyewearMystery202503Text": "ジェイドのジャガーノートの目",
+    "armorSpecialSummer2025MageText": "イトヒキベラのスーツ",
+    "armorSpecialFall2025RogueNotes": "この季節的な装備は細くて、強くて、打ちにくいターゲットになる。知覚が<%= per %>上がります。2025年秋の限定装備。",
+    "armorSpecialFall2025HealerNotes": "この季節的なよろいを着ると、暗い森の中に隠れて、戦略的に撤退することができる。体質が<%= con %>上がります。2025年秋の限定装備。",
+    "headSpecialSummer2025MageText": "イトヒキベラのヘッドドレス",
+    "eyewearMystery202510Notes": "この不気味な目は名月のように輝きます。効果なし。2025年10月の有料会員アイテム。",
+    "weaponSpecialFall2024WarriorText": "炎の剣",
+    "armorSpecialFall2024WarriorText": "ファイアインプのよろい",
+    "bodyMystery202509Notes": "このマフラーは風から守ってくれるだけでなく、見た目もとてもカッコいいです。効果なし。2025年9月の有料会員アイテム。",
+    "headAccessoryMystery202410Text": "キャンディコーンの耳",
+    "backMystery202505Text": "羽ばたくアゲハチョウの翼",
+    "headAccessoryMystery202505Text": "羽ばたくアゲハチョウの触角"
 }
