@@ -29,6 +29,10 @@ const slimLogs = winston.format(info => {
     info.body = undefined;
     info.message = 'BadRequest: Missing x-client headers';
   }
+  if (info && info.message && info.message.indexOf('NotAuthorized: Missing authentication headers.') === 0) {
+    info.body = undefined;
+    info.message = 'NotAuthorized: Missing authentication headers.';
+  }
   if (info && info.message && info.message.indexOf('TooManyRequests') === 0) {
     info.message = 'TooManyRequests';
   }
@@ -37,6 +41,7 @@ const slimLogs = winston.format(info => {
       'x-api-user': info.headers['x-api-user'] || 'unknown',
       'x-client': info.headers['x-client'] || 'unknown',
       'user-agent': info.headers['user-agent'] || 'unknown',
+      'x-forwarded-for': info.headers['x-forwarded-for'] || 'unknown',
     };
   }
   return info;
