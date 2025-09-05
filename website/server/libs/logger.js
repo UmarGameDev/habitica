@@ -32,11 +32,13 @@ const slimLogs = winston.format(info => {
   if (info && info.message && info.message.indexOf('TooManyRequests') === 0) {
     info.message = 'TooManyRequests';
   }
-  info.headers = {
-    'x-api-user': info.headers['x-api-user'] || 'unknown',
-    'x-client': info.headers['x-client'] || 'unknown',
-    'user-agent': info.headers['user-agent'] || 'unknown',
-  };
+  if (info && info.headers) {
+    info.headers = {
+      'x-api-user': info.headers['x-api-user'] || 'unknown',
+      'x-client': info.headers['x-client'] || 'unknown',
+      'user-agent': info.headers['user-agent'] || 'unknown',
+    };
+  }
   return info;
 });
 
