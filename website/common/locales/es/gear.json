@@ -3386,7 +3386,7 @@
     "weaponSpecialFall2025WarriorNotes": "Una poderosa arma capaz de trazar una senda segura a través de los peligros del Bosque Negro. Aumenta la Fuerza en <%= str %>. Equipamiento de Edición Limitada Otoño 2025.",
     "weaponSpecialFall2025RogueNotes": "Una poderosa arma capaz de trazar una senda segura a través de los peligros del Bosque Negro. Aumenta la Fuerza en <%= str %>. Equipamiento de Edición Limitada Otoño 2025.",
     "weaponSpecialFall2025RogueText": "Espada Esqueleto",
-    "weaponSpecialFall2025MageNotes": "Una poderosa arma capaz de trazar una senda segura a través de los terrores del Bosque Negro. Aumenta la Fuerza en <%= str %>. Equipamiento de Edición Limitada Otoño 2025.",
+    "weaponSpecialFall2025MageNotes": "Una poderosa arma capaz de trazar una senda segura a través de los terrores del Bosque Negro. Aumenta la Inteligencia en <%= int %> y la Percepción en <%= per %>. Equipamiento de Edición Limitada Otoño 2025.",
     "weaponSpecialFall2025WarriorText": "Hacha de Bigfoot",
     "weaponSpecialFall2025HealerText": "Hacha Kobold",
     "weaponSpecialFall2025HealerNotes": "Una poderosa arma capaz de trazar una senda segura a través de los obstáculos del Bosque Negro. Aumenta la Fuerza en <%= str %>. Equipamiento de Edición Limitada Otoño 2025.",

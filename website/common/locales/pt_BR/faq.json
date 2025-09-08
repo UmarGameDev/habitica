@@ -195,5 +195,18 @@
     "subscriptionDetail00": "Todos os assinantes, incluindo aqueles com assinaturas de presente, receberão 1 Ampulheta Mística no início de cada mês em que tiverem os benefícios de assinante.",
     "subscriptionDetail000": "Assinar por 12 meses agora te dá 12 Ampulhetas Místicas, em vez das 4 de antes.",
     "subscriptionPara0": "Estamos deixando as assinaturas do Habitica ainda melhores, com mais Ampulhetas Místicas e Gemas! Com essas mudanças, ficou muito mais fácil entender os benefícios da sua assinatura.",
-    "subscriptionHeading0": "Mudanças nas Ampulhetas Místicas"
+    "subscriptionHeading0": "Mudanças nas Ampulhetas Místicas",
+    "subscriptionDetail001": "Todos os assinantes receberão Ampulhetas Místicas na mesma data, correspondendo ao cronograma de lançamento dos Conjuntos de Equipamentos Misteriosos mensais.",
+    "subscriptionDetail002": "Os assinantes não precisarão mais esperar até o mês seguinte ao pagamento recorrente para receber as Ampulhetas Místicas.",
+    "subscriptionDetail003": "Todos os novos assinantes receberão 1 Ampulheta Mística imediatamente após a compra. Essa ampulheta contará como a entrega de Ampulheta Mística do mês atual.",
+    "subscriptionDetail01": "Novas assinaturas recorrentes de 12 meses receberão um bônus inicial único de 12 Ampulhetas Místicas extras no momento da compra.",
+    "subscriptionDetail010": "Isso será um acréscimo à Ampulheta Mística mensal que todos os novos assinantes recebem após a compra inicial.",
+    "subscriptionDetail011": "Jogadores atuais com uma assinatura ativa de 12 meses receberão este bônus no dia em que essas alterações entrarem em vigor.",
+    "subscriptionDetail10": "A quantidade de Gemas que os assinantes podem comprar com Ouro no Mercado aumentará em 2 a cada mês que eles tiverem benefícios, até atingir um máximo de 50.",
+    "subscriptionDetail100": "As novas assinaturas de 1, 3 e 6 meses agora começarão com 24 Gemas por mês e esse valor aumentará a cada mês que houver benefícios.",
+    "subscriptionDetail101": "Qualquer assinante que atualmente tenha um número ímpar de Gemas por mês terá seu limite de Gemas arredondado para o número par mais próximo.",
+    "subscriptionDetail012": "Este bônus não se aplica a assinaturas presenteadas.",
+    "subscriptionHeading1": "Mudanças nas Gemas dos Assinantes",
+    "subscriptionDetail102": "As novas assinaturas de 12 meses começarão imediatamente com a quantidade máxima de Gemas por mês, 50 Gemas em vez das 45 anteriores.",
+    "subscriptionDetail11": "A quantidade de Gemas que você pode comprar mensalmente por Ouro não será mais zerada se sua assinatura acabar."
 }
