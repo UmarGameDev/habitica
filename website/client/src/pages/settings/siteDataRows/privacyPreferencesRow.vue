@@ -34,6 +34,21 @@
       >
       </p>
       <div
+        v-if="gpcEnabled"
+        class="mx-4 px-3 py-2 mb-4 gpc-alert d-flex align-items-center black bg-yellow-50"
+      >
+        <div
+          class="svg svg-icon mr-2"
+          v-html="icons.alert"
+        >
+        </div>
+        <div
+          class="gpc-message"
+          v-html="gpcInfo"
+        >
+        </div>
+      </div>
+      <div
         class="d-flex justify-content-center"
       >
         <div class="w-66">
@@ -91,6 +106,29 @@
     line-height: 1.33;
   }
 
+  .gpc-alert {
+    border-radius: 4px;
+    line-height: 1.714;
+
+    .gpc-message {
+      opacity: 0.9;
+    }
+
+    ::v-deep a {
+      color: $black;
+      text-decoration: underline;
+    }
+
+    .svg-icon {
+      width: 16px;
+      opacity: 0.75;
+
+      ::v-deep svg path {
+        fill: $black;
+      }
+    }
+  }
+
   .mb-28p {
     margin-bottom: 28px;
   }
@@ -110,6 +148,7 @@ import ToggleSwitch from '@/components/ui/toggleSwitch.vue';
 import { GenericUserPreferencesMixin } from '@/pages/settings/components/genericUserPreferencesMixin';
 import { InlineSettingMixin } from '../components/inlineSettingMixin';
 import { mapState } from '@/libs/store';
+import alert from '@/assets/svg/for-css/alert.svg?raw';
 
 export default {
   mixins: [
@@ -120,14 +159,32 @@ export default {
     SaveCancelButtons,
     ToggleSwitch,
   },
+  data () {
+    return {
+      icons: Object.freeze({
+        alert,
+      }),
+    };
+  },
   computed: {
     ...mapState({
       user: 'user.data',
     }),
+    gpcEnabled () {
+      return navigator.globalPrivacyControl;
+    },
+    gpcInfo () {
+      const gpcUrl = 'https://globalprivacycontrol.org/';
+      if (this.user.preferences.analyticsConsent) {
+        return this.$t('gpcPlusAnalytics', { url: gpcUrl });
+      }
+      return this.$t('gpcWarning', { url: gpcUrl });
+    },
   },
   methods: {
     finalize () {
       this.setUserPreference('analyticsConsent');
+      localStorage.setItem('analyticsConsent', this.user.preferences.analyticsConsent);
       this.mixinData.inlineSettingMixin.sharedState.inlineSettingUnsavedValues = false;
     },
     prefToggled () {
@@ -135,7 +192,10 @@ export default {
       this.mixinData.inlineSettingMixin.sharedState.inlineSettingUnsavedValues = newVal;
     },
     resetControls () {
-      this.user.preferences.analyticsConsent = !this.user.preferences.analyticsConsent;
+      if (this.mixinData.inlineSettingMixin.sharedState.inlineSettingUnsavedValues) {
+        this.user.preferences.analyticsConsent = !this.user.preferences.analyticsConsent;
+        this.mixinData.inlineSettingMixin.sharedState.inlineSettingUnsavedValues = false;
+      }
     },
   },
 };
