@@ -1363,7 +1363,7 @@
     "shieldSpecialWinter2017WarriorText": "パックの盾",
     "shieldSpecialWinter2017WarriorNotes": "巨大なホッケーパックから作られたこの盾は、かなりの衝撃に耐えられます。体質が<%= con %>上がります。2016-2017年冬の限定装備。",
     "shieldSpecialWinter2017HealerText": "シュガープラムの盾",
-    "shieldSpecialWinter2017HealerNotes": "この噛みごたえのある装備は、涙がでるほど酸っぱいタスクからあなたを守ってくれます！　体質が<%= con %>上がります。2016-2017年冬の限定装備。",
+    "shieldSpecialWinter2017HealerNotes": "この噛みごたえのある装備は、涙がでるほど酸っぱいタスクからあなたを守ってくれます！体質が<%= con %>上がります。2016-2017年冬の限定装備。",
     "shieldSpecialSpring2017WarriorText": "毛糸玉の盾",
     "shieldSpecialSpring2017WarriorNotes": "この盾の糸には、１本１本に防御魔法が編みこまれています！　遊んじゃいけませんよ(あんまりたくさんはね)。体質が<%= con %>上がります。2017年春の限定装備。",
     "shieldSpecialSpring2017HealerText": "バスケットの盾",
@@ -2821,7 +2821,7 @@
     "armorArmoireBasketballUniformText": "バスケットボールのユニフォーム",
     "weaponArmoirePaintbrushText": "絵筆",
     "armorSpecialSpring2023HealerText": "ユリの葉のガウン",
-    "armorArmoireBasketballUniformNotes": "このユニフォームの背中に何がプリントされているのか気になりますか？もちろん、それはあなたのラッキーナンバーです！知覚が<%= per %>、力が上がります。ラッキー宝箱：昔懐かしいバスケットボールセット(アイテム1/2)。",
+    "armorArmoireBasketballUniformNotes": "このユニフォームの背中に何がプリントされているのか、気になりますか？もちろん、それはあなたのラッキーナンバーです！知覚が<%= per %>上がります。ラッキー宝箱：昔懐かしいバスケットボールセット（アイテム1/2）。",
     "headMystery202301Text": "勇敢な妖狐の耳",
     "backMystery202301Text": "武勇の五尾",
     "backMystery202302Notes": "このしっぽを付ければ、素敵な一日になること間違いなし！カルー！カライ！効果なし。2023年2月有料会員アイテム。",
@@ -3182,5 +3182,8 @@
     "shieldSpecialFall2024HealerText": "宇宙の盾",
     "shieldSpecialFall2024WarriorText": "炎の盾",
     "headSpecialFall2025HealerText": "コボルドの仮面",
-    "shieldSpecialFall2025HealerText": "コボルドの盾"
+    "shieldSpecialFall2025HealerText": "コボルドの盾",
+    "shieldArmoireHattersPocketWatchText": "ピカピカなポケットウォッチ",
+    "shieldSpecialSummer2024HealerText": "海貝の盾",
+    "shieldSpecialSummer2024HealerNotes": "このぴかぴかする盾は、海貝の杖よりも強いです。体質が<%= con %>上がります。2024年夏の限定装備。"
 }
