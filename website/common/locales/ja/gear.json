@@ -3185,5 +3185,7 @@
     "shieldSpecialFall2025HealerText": "コボルドの盾",
     "shieldArmoireHattersPocketWatchText": "ピカピカなポケットウォッチ",
     "shieldSpecialSummer2024HealerText": "海貝の盾",
-    "shieldSpecialSummer2024HealerNotes": "このぴかぴかする盾は、海貝の杖よりも強いです。体質が<%= con %>上がります。2024年夏の限定装備。"
+    "shieldSpecialSummer2024HealerNotes": "このぴかぴかする盾は、海貝の杖よりも強いです。体質が<%= con %>上がります。2024年夏の限定装備。",
+    "armorMystery202504Notes": "「汚れた雪男」、だって？本当は可愛らしいでしょ！効果なし。2025年4月の有料会員アイテム。",
+    "armorArmoireSpringPetalYukataText": "春の花びらの浴衣"
 }
