@@ -3187,5 +3187,17 @@
     "shieldSpecialSummer2024HealerText": "海貝の盾",
     "shieldSpecialSummer2024HealerNotes": "このぴかぴかする盾は、海貝の杖よりも強いです。体質が<%= con %>上がります。2024年夏の限定装備。",
     "armorMystery202504Notes": "「汚れた雪男」、だって？本当は可愛らしいでしょ！効果なし。2025年4月の有料会員アイテム。",
-    "armorArmoireSpringPetalYukataText": "春の花びらの浴衣"
+    "armorArmoireSpringPetalYukataText": "春の花びらの浴衣",
+    "headSpecialSummer2025HealerText": "クリオネのかぶと",
+    "headSpecialFall2025WarriorText": "サスクワッチの仮面",
+    "headSpecialSpring2025RogueNotes": "この帽子の水晶は生産的なエネルギーを出し、昼でも夜でも働けるように明るく輝きます。知覚が<%= per %>上がります。2025年春の限定装備。",
+    "headSpecialSpring2025MageText": "カマキリの仮面",
+    "headSpecialSummer2025WarriorNotes": "頑丈でとがっているこのヘルメットは、ヒトデからでも守ってくれます。力が<%= str %>上がります。2025年夏の限定装備。",
+    "shieldSpecialSummer2025WarriorText": "ホタテ貝の盾",
+    "headSpecialSpring2025RogueText": "水晶ポイントの帽子",
+    "headSpecialSpring2025HealerText": "プルメリアのヘッドドレス",
+    "headSpecialSummer2025WarriorText": "ホタテ貝のヘルメット",
+    "headSpecialSummer2025RogueText": "イカの仮面",
+    "headSpecialSummer2025RogueNotes": "この仮面をかぶるとたんに視力が向上されます。知覚が<%= per %>上がります。2025年夏の限定装備。",
+    "shieldSpecialSummer2025HealerText": "クリオネの盾"
 }
