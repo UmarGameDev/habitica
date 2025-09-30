@@ -147,7 +147,6 @@
       </li>
       <li>
         {{ $t('commGuideAKA', {habitName: 'fizself', realName: 'Hafiz'}) }}
-        ({{ $t('commGuideOnGitHub', {gitHubName: 'hafizzle'}) }})
         - Developer
       </li>
     </ul>
