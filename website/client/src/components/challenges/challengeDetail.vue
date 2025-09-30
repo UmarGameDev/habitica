@@ -7,7 +7,6 @@
       @update-challenge="updateChallenge"
     />
     <close-challenge-modal
-      :members="members"
       :challenge-id="challenge._id"
       :prize="challenge.prize"
       :flag-count="challenge.flagCount"
@@ -697,7 +696,6 @@ export default {
       this.members = [];
     },
     closeChallenge () {
-      this.initialMembersLoad();
       this.$root.$emit('bv::show::modal', 'close-challenge-modal');
     },
     edit () {
