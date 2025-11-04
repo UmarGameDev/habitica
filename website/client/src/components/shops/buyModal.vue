@@ -873,8 +873,13 @@ export default {
           return;
         }
         if (this.genericPurchase) {
+          if (this.item.key === 'rebirth_orb') {
+            localStorage.setItem('show-rebirth-confirmation', 'true');
+          }
           await this.makeGenericPurchase(this.item, 'buyModal', this.selectedAmountToBuy);
-          await this.purchased(this.item.text);
+          if (this.item.key !== 'rebirth_orb') {
+            await this.purchased(this.item.text);
+          }
         }
       }
 
