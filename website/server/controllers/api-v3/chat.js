@@ -1,7 +1,7 @@
 import pick from 'lodash/pick';
 import moment from 'moment';
 import nconf from 'nconf';
-import { authWithHeaders } from '../../middlewares/auth';
+import { authWithHeaders, chatPrivilegesRequired } from '../../middlewares/auth';
 import { model as Group } from '../../models/group';
 import { model as User } from '../../models/user';
 import {
@@ -118,7 +118,7 @@ function getBannedWordsFromText (message) {
 api.postChat = {
   method: 'POST',
   url: '/groups/:groupId/chat',
-  middlewares: [authWithHeaders()],
+  middlewares: [authWithHeaders(), chatPrivilegesRequired()],
   async handler (req, res) {
     const { user } = res.locals;
     const { groupId } = req.params;
@@ -161,10 +161,6 @@ api.postChat = {
       throw new BadRequest(res.t('bannedSlurUsed'));
     }
 
-    if (group.privacy === 'public' && user.flags.chatRevoked) {
-      throw new NotAuthorized(res.t('chatPrivilegesRevoked'));
-    }
-
     // prevent banned words being posted, except in private guilds/parties
     // and in certain public guilds with specific topics
     if (group.privacy === 'public' && !group.bannedWordsAllowed) {
@@ -204,7 +200,7 @@ api.postChat = {
     }
 
     let flagCount = 0;
-    if (group.privacy === 'public' && user.flags.chatShadowMuted) {
+    if (user.flags.chatShadowMuted) {
       flagCount = common.constants.CHAT_FLAG_FROM_SHADOW_MUTE;
 
       // Email the mods
