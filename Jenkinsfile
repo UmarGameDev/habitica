@@ -6,7 +6,7 @@ pipeline {
     }
     
     tools {
-        nodejs 'node21'  // Use the Node.js you configured in Jenkins
+        NodeJS 'node21'  // Use the Node.js you configured in Jenkins
     }
     
     stages {
