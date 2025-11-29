@@ -6,7 +6,7 @@ pipeline {
     }
     
     tools {
-        NodeJS 'NodeJS 21.0.0'  // Use the Node.js you configured in Jenkins
+        nodejs 'NodeJS'  // Use just 'NodeJS' as the tool name
     }
     
     stages {
@@ -115,7 +115,6 @@ pipeline {
     post {
         always {
             echo 'Build Stage completed - check console for details'
-            // Clean up workspace to save disk space
             cleanWs()
         }
         success {
