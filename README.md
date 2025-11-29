@@ -18,4 +18,4 @@ Habitica's code is licensed as described at https://github.com/HabitRPG/habitica
 **Creating a third-party tool?** Please review our [API Usage Guidelines](https://github.com/HabitRPG/habitica/wiki/API-Usage-Guidelines) to ensure that your tool is compliant and maintains the best experience for Habitica players.
 
 **Have any questions about Habitica or contributing?** See the links in the [Habitica](https://habitica.com) website's Help menu. There’s FAQ’s, guides, and the option to reach out to us with any further questions!
-"# Test comment for CI trigger" 
+"# Test comment for CI trigger hello" 
