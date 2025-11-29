@@ -4,8 +4,18 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out code from GitHub...'
-                checkout scm
+                echo 'Checking out code from GitHub with shallow clone...'
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    extensions: [
+                        [$class: 'CloneOption', 
+                         depth: 1, 
+                         shallow: true,
+                         timeout: 60]
+                    ],
+                    userRemoteConfigs: [[url: 'https://github.com/UmarGameDev/habitica.git']]
+                ])
             }
         }
         
