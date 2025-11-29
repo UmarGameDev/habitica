@@ -5,10 +5,6 @@ pipeline {
         timeout(time: 1, unit: 'HOURS')   // Timeout on whole pipeline job
     }
     
-    tools {
-        nodejs 'node21'  // Configure Node.js in Jenkins
-    }
-    
     stages {
         stage('Checkout') {
             options {
@@ -31,6 +27,22 @@ pipeline {
                         credentialsId: ''
                     ]]
                 ])
+            }
+        }
+        
+        stage('Setup Node.js') {
+            options {
+                timeout(time: 10, unit: 'MINUTES')
+            }
+            steps {
+                echo 'Setting up Node.js environment...'
+                // Install Node.js directly since Jenkins doesn't have it configured
+                sh '''
+                    curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
+                    sudo apt-get install -y nodejs
+                    node --version
+                    npm --version
+                '''
             }
         }
         
