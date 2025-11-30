@@ -84,6 +84,9 @@
     "npm": "^10"
   },
   "scripts": {
+    "test:backend": "pytest tests/ -v",
+    "test:report": "python tests/test_report.py",
+     "test:ci": "pytest tests/ --junitxml=test-results/junit.xml && python tests/test_report.py --ci",
     "lint": "eslint --ext .js --fix . && cd website/client && npm run lint",
     "lint-no-fix": "eslint --ext .js . && cd website/client && npm run lint-no-fix",
     "test": "npm run lint && gulp test && gulp apidoc",
@@ -125,5 +128,18 @@
     "run-rs": "^0.7.7",
     "sinon-chai": "^3.7.0",
     "sinon-stub-promise": "^4.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmarGameDev/habitica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UmarGameDev/habitica/issues"
+  },
+  "homepage": "https://github.com/UmarGameDev/habitica#readme"
 }
