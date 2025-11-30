@@ -150,7 +150,7 @@ pipeline {
                     ls -la website/server/ 2>/dev/null || echo "Server directory not found"
                     
                     echo "Root files:"
-                    ls -la | grep -E "(package|config|\.js|\.json)"
+                    ls -la | grep -E "(package|config|\\.js|\\.json)" || echo "No matching files found"
                     
                     echo "=== Checking file sizes ==="
                     du -sh website/ || echo "Cannot check website size"
@@ -184,9 +184,9 @@ pipeline {
                     echo "Latest commit: $(git log -1 --oneline 2>/dev/null || echo 'No git info')"
                     
                     echo "=== Disk usage ==="
-                    df -h .
+                    df -h . 2>/dev/null || echo "df command not available"
                     echo "=== Build directory size ==="
-                    du -sh . || echo "Cannot check directory size"
+                    du -sh . 2>/dev/null || echo "Cannot check directory size"
                 '''
             }
         }
@@ -207,38 +207,9 @@ pipeline {
         }
         success {
             echo '✅ PIPELINE SUCCESS: All stages completed successfully'
-            emailext (
-                subject: "✅ Pipeline SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                The pipeline ${env.JOB_NAME} #${env.BUILD_NUMBER} completed successfully.
-                
-                Check the build at: ${env.BUILD_URL}
-                
-                Stages completed:
-                - Checkout: ✅
-                - Install Dependencies: ✅
-                - Compile Code: ✅
-                - Create Artifacts: ✅
-                - Verify Build: ✅
-                
-                Artifacts have been archived and are ready for deployment.
-                """,
-                to: "${env.CHANGE_AUTHOR_EMAIL ?: 'umar@example.com'}"
-            )
         }
         failure {
             echo '❌ PIPELINE FAILED: Check console for errors'
-            emailext (
-                subject: "❌ Pipeline FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                The pipeline ${env.JOB_NAME} #${env.BUILD_NUMBER} failed.
-                
-                Check the build at: ${env.BUILD_URL}
-                
-                Please check the console output for detailed error information.
-                """,
-                to: "${env.CHANGE_AUTHOR_EMAIL ?: 'umar@example.com'}"
-            )
         }
         unstable {
             echo '⚠️ PIPELINE UNSTABLE: Some tests failed or quality gates not met'
