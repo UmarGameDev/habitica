@@ -2,20 +2,20 @@ pipeline {
     agent any
     
     options {
-        timeout(time: 1, unit: 'HOURS')   // Timeout on whole pipeline job
+        timeout(time: 2, unit: 'HOURS')   // Increased overall timeout
     }
     
     tools {
-        nodejs 'NodeJS'  // Use just 'NodeJS' as the tool name
+        nodejs 'NodeJS'
     }
     
     stages {
         stage('Checkout') {
             options {
-                timeout(time: 30, unit: 'MINUTES')   // Timeout on checkout stage
+                timeout(time: 60, unit: 'MINUTES')   // Increased to 60 minutes for checkout
             }
             steps {
-                echo 'Checking out code with shallow clone...'
+                echo 'Checking out code with optimized shallow clone...'
                 checkout([
                     $class: 'GitSCM',
                     branches: [[name: '*/main']],
@@ -24,11 +24,14 @@ pipeline {
                          depth: 1, 
                          shallow: true,
                          noTags: true,
-                         timeout: 30]
+                         honorRefspec: true,
+                         timeout: 60],  // Increased timeout to 60 minutes
+                        [$class: 'DisableRemotePoll']  // Disable remote polling to speed up
                     ],
                     userRemoteConfigs: [[
                         url: 'https://github.com/UmarGameDev/habitica.git',
-                        credentialsId: ''
+                        credentialsId: '',
+                        timeout: 60  // Increased timeout for remote operations
                     ]]
                 ])
                 
@@ -115,7 +118,12 @@ pipeline {
     post {
         always {
             echo 'Build Stage completed - check console for details'
-            cleanWs()
+            script {
+                // Only clean workspace if we're inside a node context
+                if (env.NODE_NAME) {
+                    cleanWs()
+                }
+            }
         }
         success {
             echo '✅ BUILD STAGE SUCCESS: Code compiled and artifacts created'
