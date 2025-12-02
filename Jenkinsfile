@@ -27,7 +27,7 @@ pipeline {
                     echo "Building React frontend..."
                     cd website/client && npm run build
                     
-                    # Verify build
+                    # Verify buildd
                     ls -la website/client/build/
                 '''
             }
